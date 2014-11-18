@@ -1,19 +1,38 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Twitter Emotions</title>
-    
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/chart.js"></script>
-    <script type="text/javascript" src="js/data.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>
-
+    <title>Twitter Feelings</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/app.css" />
   </head>
 
   <body>
-    <canvas id="lineChart" width="500" height="300"></canvas>
-    <canvas id="barChart" width="500" height="350"></canvas>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Twitter Feelings</h3>
+        </div>
+      </div> <!-- 1st row -->
+
+      <div class="row">
+        <div class="col-md-6" id="lineChartContainer">
+          <canvas id="lineChart" width="450px" height="300px"></canvas>      
+        </div>
+        <div class="col-md-6" id="barChartContainer">
+          <canvas id="barChart" width="450px" height="300px"></canvas>      
+        </div>
+      </div> <!-- 2nd row -->
+
+    </div> <!-- container-fluid -->
+
+    
+    
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/chart.js"></script>
+    <script type="text/javascript" src="js/data.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
   </body>
 
 </html>
