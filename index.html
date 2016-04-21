@@ -9,30 +9,77 @@
   <body>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-12">
-          <h3>Twitter Feelings</h3>
+        <div class="col-md-6">
+          <h2 id="headline">Twitter<span class="thinfont"> | Emotions</span></h2>
+        </div>
+        <div class="col-md-offset-3 col-md-3">
+          <h2 id="weeks" class="thinfont">OCT 18 - OCT 24</span></h2>
         </div>
       </div> <!-- 1st row -->
 
       <div class="row">
-        <div class="col-md-6" id="lineChartContainer">
-          <canvas id="lineChart" width="450px" height="300px"></canvas>      
+        
+
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="kpi" id="happy_kpi">
+            <p class="kpi_value happy_val">0</p>
+            <p id="happy_caption">#Happy</p>
+          </div>
         </div>
-        <div class="col-md-6" id="barChartContainer">
-          <canvas id="barChart" width="450px" height="300px"></canvas>      
+        <div class="col-md-3">
+          <div class="kpi" id="sad_kpi">
+            <p class="kpi_value sad_val">0</p>
+            <p id="sad_caption">#Sad</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="kpi" id="fear_kpi">
+            <p class="kpi_value fear_val">0</p>
+            <p id="fear_caption">#Fear</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="kpi" id="anger_kpi">
+            <p class="kpi_value anger_val">0</p>
+            <p id="anger_caption">#Anger</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-offset-1 col-md-5 chartContainer" id="lineChartContainer">
+          <canvas id="lineChart" width="400px" height="220px"></canvas>   
+          <p class="chart_desc">Tweets per day</p>   
+        </div>
+        <div class="col-md-5 chartContainer" id="polarChartContainer">
+          <canvas id="polarChart" width="400px" height="220px"></canvas>      
+          <p class="chart_desc">Weekly Distribution</p>   
         </div>
       </div> <!-- 2nd row -->
+
+      <div class="row">
+        <div class="col-md-offset-1 col-md-5 chartContainer" id="doughnutChartContainer">
+          <canvas id="doughnutChart" width="400px" height="200px"></canvas>      
+          <p class="chart_desc_dn">Avg tweets per hour</p>  
+        </div>
+      
+        <div class="col-md-5 chartContainer" id="barChartContainer">
+          <canvas id="barChart" width="400px" height="200px"></canvas>      
+          <p class="chart_desc">Tweets per day</p>  
+        </div>
+      </div>
 
     </div> <!-- container-fluid -->
 
     
     
 
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/chart.js"></script>
-    <script type="text/javascript" src="js/data.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/chart.js"></script>
+    <script type="text/javascript" src="./js/data.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/app.js"></script>
   </body>
 
 </html>

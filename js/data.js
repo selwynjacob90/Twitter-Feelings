@@ -24,3 +24,29 @@ window.monthly_data = [
     "anger": [4302, 4357, 4328, 4324, 4387, 4380, 4410]
   }
 ]
+
+window.unique_tweets = [
+  {
+    "happy": 1700,
+    "sad" : 475,
+    "fear" : 260,
+    "anger" : 380
+  },
+  {
+    "happy": 1645,
+    "sad" : 405,
+    "fear" : 290,
+    "anger" : 342
+  },
+  {
+    "happy": 1893,
+    "sad" : 493,
+    "fear" : 287,
+    "anger" : 412
+  },{
+    "happy": 1987,
+    "sad" : 512,
+    "fear" : 293,
+    "anger" : 479
+  }
+]
